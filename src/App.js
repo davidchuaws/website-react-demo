@@ -8,6 +8,7 @@ import Services from './components/Common/Services';
 import Portfolio from './components/Common/Portfolio';
 import Team from './components/Common/Team';
 import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
 
 class App extends Component {
   render() {
@@ -37,6 +38,11 @@ class App extends Component {
             <Route 
               path="/team"
               element={<Team />}
+            />
+
+            <Route 
+              path="/contact"
+              component={<Contact />}
             />
             </Routes>
         </PageWrapper>
